@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center" id="display_message">
+    <h1>Welcome To FlaskApp</h1>
+    <p class="lead">This application is built on the Python Flask framework by me to check and detect facial express and apply deep learning mode on the uploaded images</p>
+  </div>
+<div class="container">
+      {% include 'includes/_messages.html' %}
+</div>
+
+<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+    <div class="container container-fluid">
+    <input class="file-path validate" id="file-picker" type="file" name="file" accept="image/*" multiple>
+    <input type="submit" value="Upload!" id="upload-button" class="btn btn-primary btn-lg">
+    
+    </div>
+    
+    
+
+    
+    
+</form><br>
+
+    
+        <img id="image_disp" src = {{image_name}} width="40%" height="40%" onerror="this.style.display='none'">
+     
+
+<br><br>
+    
+<script>
+
+    $("#file-picker").change(function(){
+
+        var input = document.getElementById('file-picker');
+
+        for (var i=0; i<input.files.length; i++)
+        {
+        //koala.jpg, koala.JPG substring(index) lastIndexOf('a') koala.1.jpg
+            var ext= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
+
+            if ((ext == 'jpg') || (ext == 'png'))
+            {
+                $("#msg").text("Files are supported")
+            }
+            else
+            {
+                $("#msg").text("Files are NOT supported")
+                document.getElementById("file-picker").value ="";
+            }
+
+        }
+
+
+    } );
+
+</script>
+{% endblock %}

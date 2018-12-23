@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container container-fluid">
+    <img id="image_disp" src = {{image_name}} width="40%" height="40%" onerror="this.style.display='none'">
+    <div class="container">{{label}} </div>  
+</div>
+
+
+{% endblock %}
