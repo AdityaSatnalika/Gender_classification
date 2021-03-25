@@ -123,7 +123,7 @@ python-dateutil==2.4.2
 pytz==2015.4
 pywin==0.3.1
 pywin32==219
-PyYAML==3.11
+PyYAML==5.4
 pyzmq==14.7.0
 reportlab==3.2.0
 requests==2.7.0
