@@ -91,7 +91,7 @@ oauthlib==0.7.3.dev0
 objgraph==2.0.1.dev0
 packaging==15.2
 pandas==0.16.2
-paramiko==1.15.2
+paramiko==2.10.1
 pathlib==1.0.1
 patsy==0.3.0
 pep8==1.6.2
