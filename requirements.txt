@@ -146,7 +146,7 @@ tables==3.2.0
 Tempita==0.5.2
 tornado==4.2
 traceback2==1.4.0
-ujson==1.33
+ujson==5.4.0
 unittest2==1.0.1
 urllib3==1.10.4
 veusz==1.23.1
