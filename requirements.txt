@@ -47,7 +47,7 @@ guidata==1.6.1
 guiqwt==2.3.2
 gunicorn==19.9.0
 h5py==2.5.0
-html5lib==0.99999
+html5lib==0.999999999
 idna==2.1.dev1
 ipaddress==1.0.7
 ipdb==0.8.1
