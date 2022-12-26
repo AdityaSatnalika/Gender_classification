@@ -154,7 +154,7 @@ virtualenv==13.0.3
 virtualenvwrapper-win==1.2.1
 ViTables==2.2a1
 Werkzeug==0.14.1
-wheel==0.24.0
+wheel==0.38.1
 Whoosh==2.7.0
 wincertstore==0.2
 wsaccel==0.6.2
